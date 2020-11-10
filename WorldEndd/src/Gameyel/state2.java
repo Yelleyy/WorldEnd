@@ -161,7 +161,6 @@ public class state2 extends JPanel implements ActionListener, MouseListener, Mou
             Fireball ba = fireball.get(i);
             g.drawImage(ba.fire.getImage(), ba.x, ba.y + 50, 130, 70, null);
             ba.move();
-            ba.count++;
             if (ba.x < 0) {
                 fireball.remove(i);
             }
@@ -233,7 +232,7 @@ public class state2 extends JPanel implements ActionListener, MouseListener, Mou
         g.drawString("HP " + HP, 100, 170);
         g.setColor(Color.MAGENTA);
         g.drawString("REMAIN " + destroy2, 800, 90);
-        if ((destroy2 <= 0) && (times2 >= 0)) {
+        if ((destroy2 <=0) && (times2 >= 0)) {
             super.paintComponent(g);
             ball1st2.stop();
             ball2st2.stop();
@@ -246,7 +245,7 @@ public class state2 extends JPanel implements ActionListener, MouseListener, Mou
             g.setFont(new Font("2005_iannnnnAMD", Font.BOLD, 70));
             g.drawString("SCORE   " + scor, 300, 200);
             g.setFont(new Font("2005_iannnnnAMD", Font.BOLD, 100));
-            g.drawString("STATE CLEAR!!", 250, 150);
+            g.drawString("STATE 2 CLEAR!!", 250, 150);
         } else if (HP <= 0 || (times2 <= 0)) {
             ball1st2.stop();
             ball2st2.stop();

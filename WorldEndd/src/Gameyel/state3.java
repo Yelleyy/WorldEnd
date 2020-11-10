@@ -256,7 +256,7 @@ public class state3 extends JPanel implements ActionListener, MouseListener, Mou
             g.setFont(new Font("2005_iannnnnAMD", Font.BOLD, 70));
             g.drawString("SCORE   " + scor, 300, 200);
             g.setFont(new Font("2005_iannnnnAMD", Font.BOLD, 100));
-            g.drawString("STATE CLEAR!!", 250, 150);
+            g.drawString("STATE 3 CLEAR!!", 250, 150);
         } else if (HP <= 0 || (times3 <= 0)) {
             ball1st3.stop();
             ball2st3.stop();
